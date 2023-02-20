@@ -1,0 +1,111 @@
+#body{
+  background-color: rgb(255, 255, 255);
+}
+
+#body-dark{
+  background-color: rgb(0, 0, 0);
+}
+
+#mainbox-dark{
+  background-color: rgb(44, 43, 43);
+  position: fixed;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  top: 10%;
+  left: 25%;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+#chatbox{
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(44, 43, 43);
+  color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+#mainbox{
+  background-color: rgb(234, 233, 233);
+  position: fixed;
+  color: rgb(0, 0, 0);
+  width: 50%;
+  top: 10%;
+  left: 25%;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.squares {
+  margin: 1px;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  background-color: aquamarine;
+  display: inline-block;
+  color: darkblue;
+  font-size: large;
+  text-align: center;
+}
+
+#wordlength{
+  width: 10%;
+}
+
+.chances-dark{
+  color:rgb(255, 255, 255);
+  background-color: rgb(24, 24, 24);
+}
+
+.wrongguess-dark{
+  color:rgb(255, 255, 255);
+  background-color: rgb(24, 24, 24);
+}
+#mainbox div{
+  padding: 5px;
+}
+
+#mainbox-dark div{
+  padding: 5px;
+}
+
+#word{
+  display: flex;
+  flex-direction: row;
+  margin-left: 225px;
+  padding: 5px;
+}
+
+div #scoreboard{
+  margin-left: 30%;
+  height:100px;
+  width:30%;
+  overflow:hidden; 
+  overflow-y:scroll;
+}
+
+
+#buttons>input{
+  padding: 3px;
+  margin: 3px;
+  font-size :medium;
+}
+
+#leaderboard{
+  border-radius: 10%;
+}
+
+#profile{
+  border-radius: 10%;
+}

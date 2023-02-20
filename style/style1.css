@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(4, 28, 28);
+}
+
+#mainBox{
+  background-color: whitesmoke;
+  position: fixed;
+  width: 30%;
+  padding: 20px;
+  top: 20%;
+  left: 35%;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#submit{
+  background-color: rgb(13, 169, 117);
+  border-radius: 10%;
+}
+
+#button{
+  background-color: rgb(13, 169, 117);
+  border-radius: 10%;
+}
+
+#back{
+  background-color: darkgray;
+  border-radius: 10%;
+}

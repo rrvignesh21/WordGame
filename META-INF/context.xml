@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <ResourceLink name="wordgameDB"
+        global="wordgameDB"
+        type="javax.sql.DataSource"/>
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+       dataSourceName="wordgameDB"
+       userTable="userdata" userNameCol="username" userCredCol="userpassword"
+       userRoleTable="userroles" roleNameCol="rolename"/>
+</Context>

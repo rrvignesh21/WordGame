@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <title>
+            Word Guess Game
+        </title>
+    </head>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/game.js"></script>
+    <script type="text/javascript">
+        function validate(input){
+            let pattern = new RegExp("[^a-zA-Z]");
+            if(pattern.test(input.value)){
+                input.value = '';
+            }
+            input.value = input.value.substr(0, 1).toLowerCase();
+        }
+    </script>
+    <body id="body">
+        <div id="chatbox">
+        </div>
+        <div id="mainbox">
+        <h3>Word Guessing Game</h3>
+        <h4 id="welcome"></h4>
+
+            <div id="word">
+
+            </div>
+            <div></div>
+            <div>
+                <input id="input" type="text" onkeyup="validate(this);"/>
+                <input id="guess" type="button"  value="Guess">
+                <span id="roombtn"></span>
+            </div>
+            <div id="hint">
+
+            </div>  
+        <div>
+            <div>
+                <label>Wrongly Guessed Letters:</label>
+                <input id="wrongguess" type="text" value="" disabled="true">
+            </div>
+            <div id="score">
+
+            </div>
+            <div>
+                <label>Chances : </label>
+                <input id="chances" type="number" value="5" disabled="true">
+            </div>
+        </div>
+        <div id="buttons">
+        </div>
+        <div>
+            <button class="btn btn-outline-danger" id="logout" type="button" value="Logout"><i class="fa fa-sign-out"></i>Logout</button>
+        </div>
+    </div>
+
+        <div class="modal fade" id="messages" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="msg"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="ok">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmation" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Are You Sure ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <strong id="message"></strong>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="yes">Yes</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

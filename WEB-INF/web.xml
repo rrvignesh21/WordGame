@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+
+<servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Login</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>Registration</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ScoreUpdate</servlet-name>
+    <servlet-class>ScoreUpdate</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>ScoreUpdate</servlet-name>
+    <url-pattern>/ScoreUpdate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetScoreBoard</servlet-name>
+    <servlet-class>GetScoreBoard</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>GetScoreBoard</servlet-name>
+    <url-pattern>/GetScoreBoard</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>MakeAdmin</servlet-name>
+    <servlet-class>MakeAdmin</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>MakeAdmin</servlet-name>
+    <url-pattern>/MakeAdmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RevokeAdmin</servlet-name>
+    <servlet-class>RevokeAdmin</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>RevokeAdmin</servlet-name>
+    <url-pattern>/RevokeAdmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RemoveUser</servlet-name>
+    <servlet-class>RemoveUser</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>RemoveUser</servlet-name>
+    <url-pattern>/RemoveUser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ResetScore</servlet-name>
+    <servlet-class>ResetScore</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>ResetScore</servlet-name>
+    <url-pattern>/ResetScore</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ChangePassword</servlet-name>
+    <servlet-class>ChangePassword</servlet-class>
+</servlet> 
+<servlet-mapping>
+    <servlet-name>ChangePassword</servlet-name>
+    <url-pattern>/ChangePassword</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetProfileData</servlet-name>
+    <servlet-class>GetProfileData</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetProfileData</servlet-name>
+    <url-pattern>/GetProfileData</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetPreference</servlet-name>
+    <servlet-class>GetPreference</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetPreference</servlet-name>
+    <url-pattern>/GetPreference</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SetPreference</servlet-name>
+    <servlet-class>SetPreference</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SetPreference</servlet-name>
+    <url-pattern>/SetPreference</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>Search</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>CreateRoom</servlet-name>
+    <servlet-class>CreateRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreateRoom</servlet-name>
+    <url-pattern>/CreateRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetUserRoom</servlet-name>
+    <servlet-class>GetUserRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetUserRoom</servlet-name>
+    <url-pattern>/GetUserRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ListAllRoom</servlet-name>
+    <servlet-class>ListAllRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ListAllRoom</servlet-name>
+    <url-pattern>/ListAllRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetRoom</servlet-name>
+    <servlet-class>GetRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetRoom</servlet-name>
+    <url-pattern>/GetRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>JoinRoom</servlet-name>
+    <servlet-class>JoinRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>JoinRoom</servlet-name>
+    <url-pattern>/JoinRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateSroreRoom</servlet-name>
+    <servlet-class>UpdateSroreRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateSroreRoom</servlet-name>
+    <url-pattern>/UpdateSroreRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetRoomLeaderBoard</servlet-name>
+    <servlet-class>GetRoomLeaderBoard</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetRoomLeaderBoard</servlet-name>
+    <url-pattern>/GetRoomLeaderBoard</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteRoom</servlet-name>
+    <servlet-class>DeleteRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteRoom</servlet-name>
+    <url-pattern>/DeleteRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetWordDefinition</servlet-name>
+    <servlet-class>GetWordDefinition</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetWordDefinition</servlet-name>
+    <url-pattern>/GetWordDefinition</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RoomServlet</servlet-name>
+    <servlet-class>RoomServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RoomServlet</servlet-name>
+    <url-pattern>/RoomServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SseRoom</servlet-name>
+    <servlet-class>SseRoom</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SseRoom</servlet-name>
+    <url-pattern>/SseRoom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateWord</servlet-name>
+    <servlet-class>UpdateWord</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateWord</servlet-name>
+    <url-pattern>/UpdateWord</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetUserData</servlet-name>
+    <servlet-class>GetUserData</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetUserData</servlet-name>
+    <url-pattern>/GetUserData</url-pattern>
+</servlet-mapping>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>WordGame</web-resource-name>
+        <url-pattern>/html/login.html</url-pattern>
+        <url-pattern>/html/game.html</url-pattern>
+        <url-pattern>/html/createRoom.html</url-pattern>
+        <url-pattern>/html/room.html</url-pattern>
+        <url-pattern>/html/myprofile.html</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>player</role-name>
+    </auth-constraint>
+</security-constraint>
+
+<security-role>
+    <role-name>player</role-name>
+</security-role>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>WordGame</web-resource-name>
+        <url-pattern>/html/leaderboard.html</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+</security-constraint>
+
+<security-role>
+    <role-name>admin</role-name>
+</security-role>
+
+<login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+        <form-login-page>/html/login.html</form-login-page>
+        <form-error-page>/errors.html</form-error-page>
+    </form-login-config>
+</login-config>
+
+</web-app>

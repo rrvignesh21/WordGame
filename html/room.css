@@ -1,0 +1,35 @@
+#body{
+    background-color:aliceblue;
+    color:black;
+}
+
+#body-dark{
+    background-color: black;
+    color: aliceblue;
+}
+
+#createroomform{
+    color: black;
+}
+
+#messages{
+    color: black;
+}
+
+#confirmation{
+    color: black;
+}
+
+#mainbox{
+    margin: 5px;
+}
+#createroom{
+    position: relative;
+    left: 40%;
+}
+
+.room{
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+    border-radius: 1%;
+}

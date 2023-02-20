@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <title>
+            User Manage
+        </title>
+        <link rel="stylesheet" href="leaderboard.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="../js/leaderboard.js"></script>
+    </head>
+    <body id="bdy">
+        <div id="mainbox">
+            <h3 id="title">User Data</h3>
+            <div id="searchBar">
+                <input type="text" placeholder="Search" id="searchValue"><button class="btn btn-outline-primary" id="search"><i class="fa fa-search"></i></button>
+            </div>
+            <div id="space">
+                <br>
+            </div>
+            <div id="mainbtn">
+                <button class="btn btn-outline-success" id="makeAdmin"><i class="fa fa-user-secret"></i>Make Admin</button> 
+                <button class="btn btn-outline-danger" id="removeUsers"><i class="fa fa-trash"></i>Remove Users</button> 
+                <button class="btn btn-outline-secondary" id="resetScore"><i class="fa fa-refresh"></i>Reset Score</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th><label id="selectallrow">Select All</label><div><input id="selectAll" type="checkbox" ></div></th>
+                        <th id="sortByRank">Ranking <i id="ranksortsymol" class="fa fa-sort-numeric-asc"></i></th>
+                        <th id="sortByName">Name <i id="namesortsymbol" class="fa fa-sort"></i></th>
+                        <th id="sortByPoint">Points <i id="pointsortsymbol" class="fa fa-sort-numeric-desc"></i> </th>
+                    </tr>
+                </thead>
+                <tbody id="scoreboard">
+                </tbody>
+                <tfoot id="tfoot">
+                    <tr>
+                        <th id="pagenumber" colspan="8">
+                            <button type="button" id="first">first</button>
+                            <button type="button" id="prev">prev</button>
+                            <span id="pages"></span>
+                            <button type="button" id="next">next</button>
+                            <button type="button" id="last">last</button>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div id="listfooter">
+                <input type="button" id="back" value="Back">
+                <div><label>page no </label> <div id="currentpage">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Modal Box -->
+        <div class="modal fade" id="messages" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <strong id="msg"></strong>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="ok">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- confimation Modal Box -->
+        <div class="modal fade" id="confirmation" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Are You Sure ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <strong id="message"></strong>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="yes">Yes</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Change Password Modal -->
+        <div class="modal fade" id="passwordchange" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Change Password</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" id="close">Close</button>
+                  <button type="button" class="btn btn-primary" id="submit">Change Password</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

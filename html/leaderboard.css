@@ -1,0 +1,163 @@
+#bdy{
+    background-color: rgb(255, 255, 255);
+}
+
+#bdy-dark{
+    background-color: rgb(0, 0, 0);
+}
+
+#mainbox-dark{
+    background-color: rgb(44, 43, 43);
+    position: fixed;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    height: 70%;
+    top: 4%;
+    left: 15%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#mainbox{
+    background-color: rgb(234, 233, 233);
+    position: fixed;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    height: 70%;
+    top: 4%;
+    left: 15%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#mainbtn{
+    margin-left: 53%;
+}
+
+#listfooter{
+    position: fixed;
+    width: 70%;
+    background-color: rgb(234, 233, 233);
+}
+
+#listfooter-dark{
+    position: fixed;
+    width: 70%;
+    background-color: rgb(44, 43, 43);
+}
+
+#tfoot-dark{
+    background-color: rgb(44, 43, 43);
+    height: 20%;
+    width: 100%;
+}
+
+#tfoot{
+    background-color: rgb(234, 233, 233);
+    height: 20%;
+    width: 100%;
+}
+
+th>button.mkadmin{
+    background-color: aquamarine;
+    color: black;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+#space{
+    height: 9.5%;
+}
+
+th>button.revoke{
+    background-color: rgb(244, 82, 82);
+    color: black;
+    border-radius: 10%;
+}
+
+button#first{
+    position: fixed;
+    left: 39%;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(179, 236, 252);
+    border-radius: 10%;
+}
+
+button#prev{
+    position: fixed;
+    left: 42.5%;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(179, 236, 252);
+    border-radius: 10%;
+}
+
+button#next{
+    position: fixed;
+    left: 53.5%;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(179, 236, 252);
+    border-radius: 10%;
+}
+
+#searchBar{
+    margin-right: 70%;
+}
+
+button#last{
+    position: fixed;
+    left: 57.5%;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(179, 236, 252);
+    border-radius: 10%;
+}
+
+#back{
+    height: 30px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 10%;
+  }
+
+#pages>button{
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(179, 236, 252);
+    border-radius: 10%;
+}
+
+.reset{
+    border-radius: 10%;
+    background-color: rgb(231, 229, 228);
+}
+
+.changepassword{
+    border-radius: 10%;
+}
+
+.remove{
+    border-radius: 10%;
+    background-color: rgb(255, 100, 100);
+}
+
+table{
+    width: 100%;
+    height: 85%;
+    /* border-color: black; */
+}
+tbody#scoreboard{
+    font-size: large;
+    margin-left: 70%;
+    height:100%;
+    width: 100%;
+}

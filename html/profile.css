@@ -1,0 +1,63 @@
+#body{
+    background-color: rgb(255, 255, 255);
+}
+
+#body-dark{
+    background-color: rgb(0, 0, 0);
+}
+
+#mainbox{
+    background-color: rgb(234, 233, 233);
+    position: fixed;
+    width: 40%;
+    padding: 10px;
+    top: 20%;
+    left: 30%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#mainbox-dark{
+    background-color: rgb(44, 43, 43);
+    position: fixed;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    padding: 10px;
+    top: 20%;
+    left: 30%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#mode{
+    position: fixed;
+    top:20%;
+    left: 30%;
+}
+div>span{
+    font-size: larger;
+}
+
+#mainbox>div{
+    padding: 5px;
+    font-size: larger;
+}
+
+#mainbox-dark>div{
+    padding: 5px;
+    font-size: larger;
+}
+
+#back{
+    height: 30px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 10%;
+}
